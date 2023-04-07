@@ -1,0 +1,305 @@
+@import url('https://fonts.google.com/specimen/IBM+Plex+Mono?query=IBM');
+:root {
+  background: black;
+}
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  font-family: 'IBM Plex Mono';
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: #4520ab;
+  padding: 16.5px 0;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+}
+
+.header_menu {
+  display: flex;
+
+  margin: 0 auto;
+  background: #4520ab;
+}
+
+.menu_list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+
+.menu_link {
+  font-weight: 600;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.3;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu_link::before {
+  content: '';
+  width: 80px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #ffbc5b;
+  position: absolute;
+  left: 50%;
+  bottom: -25%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu_search_icon {
+  width: 10px;
+  height: 10px;
+  fill: #4520ab;
+  display: block;
+  background-color: #4520ab;
+}
+
+.menu_search_icon:hover {
+  fill: #ffbc5b;
+}
+
+.header_icon {
+  width: 250px;
+  height: 44px;
+  top: 18px;
+  border: 20px;
+  margin: auto;
+
+  flex-wrap: wrap;
+}
+
+
+/* ==========body========== */
+
+.link_nav {
+  text-decoration: none;
+}
+
+.title {
+  margin-top: 52px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: -0.04em;
+  color: #ffbc5b;
+  position: relative;
+  padding-bottom: 33px;
+  margin-left: 11px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card_item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_icon {
+  flex: 3;
+  display: block;
+  width: 322px;
+  height: 182px;
+  object-fit: cover;
+  padding-top: 33px;
+  margin-bottom: 16px;
+  padding: 0 13px;
+}
+
+.card_arrow {
+  flex: 1;
+  border: none;
+  width: 30px;
+  height: 30px;
+  padding-top: 200px;
+  background: transparent url('../css/〉.svg') center center no-repeat;
+  align-items: center;
+}
+
+.recomend {
+  display: flex;
+  flex-wrap: wrap;
+  width: 970px;
+}
+
+.recomended_item {
+  position: relative;
+  justify-content: end;
+}
+
+.recomended_icon {
+  width: 322px;
+  height: 485px;
+  object-fit: cover;
+  padding-top: 33px;
+  margin-bottom: 16px;
+  padding: 0 3px;
+  position: relative;
+}
+
+.recomended_title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #515151;
+  margin-bottom: 8px;
+  margin-left: 12px;
+}
+
+.recomended_text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #515151;
+  margin-left: 12px;
+}
+
+.recomend_arrow {
+  display: flex;
+  border: none;
+  width: 100px;
+  height: 100px;
+  background: transparent url('../css/〉.svg') center center no-repeat;
+  padding-top: 50px;
+  position: relative;
+}
+
+.card h2 {
+  position: absolute;
+  width: 45px;
+  height: 30px;
+  left: 25px;
+  top: 12px;
+  background: #ffbc5b;
+  border-radius: 6px;
+}
+
+.card h4,
+h2 {
+  color: #515151;
+  font-family: sans-serif;
+}
+
+.recomend h2 {
+  position: absolute;
+  width: 45px;
+  height: 30px;
+  left: 25px;
+  top: 12px;
+  background: #ffbc5b;
+  border-radius: 6px;
+}
+
+.card_icon {
+  border-radius: 15px;
+  transition: 1s;
+}
+
+.card_icon:hover {
+  transform: scale(1.1);
+}
+
+.link_rec {
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+/*hovers*/
+
+.menu_item:hover .menu_link {
+  font-weight: 600px;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #ffbc5b;
+  opacity: 1;
+}
+
+.menu_link:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.link_rec:hover {
+  transform: scale(1.1);
+}
+
+.recomend:hover .recomended_title {
+  color: #f5f5f5;
+}
+
+.recomend:hover .recomended_text {
+  color: #f5f5f5;
+}
+
+.card:hover .recomended_title {
+  color: #f5f5f5;
+}
+.card:hover {
+  color: #f5f5f5;
+}
+.card h2:hover {
+  color: #f5f5f5;
+}
+
+.card:hover .recomended_text {
+  color: #f5f5f5;
+}
+
+.card_item:hover {
+  color: #f5f5f5;
+}
+.recomended_item:hover {
+  color: #f5f5f5;
+}
+
+/*========*/
+
+@media (max-width: 1300px) {
+  .link_rec:last-child {
+  }
+
+  .menu_list {
+    flex: unset;
+  }
+}
+
+@media (max-width: 765px) {
+  .menu_list {
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+  }
+
+  .link_rec:nth-last-child(-n + 2) {
+    display: none;
+  }
+}
